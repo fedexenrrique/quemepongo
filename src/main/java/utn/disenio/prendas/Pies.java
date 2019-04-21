@@ -1,5 +1,5 @@
 package utn.disenio.prendas;
 
-public class Pies {
+public abstract class Pies {
 
 }

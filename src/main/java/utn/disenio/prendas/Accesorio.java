@@ -1,5 +1,5 @@
 package utn.disenio.prendas;
 
-public class Accesorio {
+public abstract class Accesorio {
 
 }

@@ -3,7 +3,7 @@ package utn.disenio;
 import java.util.Scanner;
 
 import utn.disenio.clima.Localization;
-import utn.disenio.clima.WeatherToday;
+import utn.disenio.clima.Sensacion;
 
 public class App 
 {
@@ -11,15 +11,21 @@ public class App
     {
         // INICIALIZACIONES
     	Localization loc     = new Localization();
-    	WeatherToday weather = new WeatherToday();
+    	Sensacion temperatura;
+    	Persona      pearson = new Persona("Ezequiel Sosa", 33);
     	Scanner s = new Scanner(System.in);
     	
-    	System.out.println( "Indique cuál es el clima de hoy en Buenos Aires." );
-        System.out.println( "  1 - Frío \n  2 - Fresco \n  3 - Cálido \n  4 - Caluroso " );
-        System.out.print("Ingrese opción: ");
-        Integer option = s.nextInt();
+//    	
+//    	System.out.println( "Indique cuál es el clima de hoy en Buenos Aires." );
+//        System.out.println( "  1 - Frío \n  2 - Fresco \n  3 - Cálido \n  4 - Caluroso " );
+//        System.out.print("Ingrese opción: ");
+//        Integer option = s.nextInt();
+//        
+//        System.out.println(option);
+//        
+        int option = (int) Math.floor(Math.random()*4);
+        System.out.println("El clima hoy es " + Sensacion.values()[option] + ". Prox. versión incluirá WS de clima."); 
         
-        System.out.println(option);
         
     }
 }

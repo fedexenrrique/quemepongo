@@ -6,6 +6,8 @@ import java.util.Scanner;
 import utn.disenio.clima.Localization;
 import utn.disenio.clima.Sensacion;
 import utn.disenio.prendas.Ropa;
+import utn.disenio.prendas.piernas.Pantalon;
+import utn.disenio.prendas.piernas.PantalonLargo;
 import utn.disenio.prendas.torso.Camisa;
 
 public class App 
@@ -39,8 +41,10 @@ public class App
     	LinkedList<Ropa> ropas = new LinkedList();
     	
     	Camisa camisa = new Camisa();
+    	PantalonLargo plargo = (PantalonLargo) Pantalon.crearPantalon(Pantalon.LongitudPantalon.LARGO);
     	
     	ropas.add(camisa);
+    	ropas.add(plargo);
     	
     	return ropas;
     }

@@ -2,6 +2,7 @@ package utn.disenio.prendas.piernas;
 
 import utn.disenio.clima.Sensacion;
 import utn.disenio.prendas.Ropa;
+import utn.disenio.prendas.SeccionCorporal;
 
 public abstract class Pantalon extends Ropa {
 	
@@ -13,7 +14,7 @@ public abstract class Pantalon extends Ropa {
 	public static enum LongitudPantalon {LARGO, CORTO};
 	
 	
-	public static Pantalon Pantalon(LongitudPantalon pi_longPan) {
+	public static Pantalon crearPantalon(LongitudPantalon pi_longPan) {
 		
 		Pantalon pantalon;
 		
@@ -34,6 +35,9 @@ public abstract class Pantalon extends Ropa {
 			System.out.println("Acá hay error de pantalon.");
 			return null;
 		}
+		
+		SeccionCorporal seccorp[] = {SeccionCorporal.PIERNA}; 
+		pantalon.setCubre(seccorp);
 		
 		return (Pantalon) pantalon;
 		

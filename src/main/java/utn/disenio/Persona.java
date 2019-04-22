@@ -36,47 +36,30 @@ public class Persona {
 				
 		}
 	}
-	
+
 	public String getNombre() {
 		return nombre;
 	}
+
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
+
 	public Integer getEdad() {
 		return edad;
 	}
+
 	public void setEdad(Integer edad) {
 		this.edad = edad;
 	}
-	public Pies getPies() {
-		return pies;
+
+	public LinkedList<Ropa> getTengoPuesto() {
+		return tengoPuesto;
 	}
-	public void setPies(Pies pies) {
-		this.pies = pies;
+
+	public void setTengoPuesto(LinkedList<Ropa> tengoPuesto) {
+		this.tengoPuesto = tengoPuesto;
 	}
-	public Piernas getPiernas() {
-		return piernas;
-	}
-	public void setPiernas(Piernas piernas) {
-		this.piernas = piernas;
-	}
-	public LinkedList<Accesorio> getAccesorios() {
-		return accesorios;
-	}
-	public void setAccesorios(LinkedList<Accesorio> accesorios) {
-		this.accesorios = accesorios;
-	}
-	public Torso getTorso() {
-		return torso;
-	}
-	public void setTorso(Torso torso) {
-		this.torso = torso;
-	}
-	@Override
-	public String toString() {
-		return "Persona [nombre=" + nombre + ", edad=" + edad + ", pies=" + pies + ", piernas=" + piernas
-				+ ", accesorios=" + accesorios + ", torso=" + torso + "]";
-	}
+	
 	
 }

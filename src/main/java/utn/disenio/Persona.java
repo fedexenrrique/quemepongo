@@ -3,20 +3,13 @@ package utn.disenio;
 import java.util.LinkedList;
 
 import utn.disenio.clima.Sensacion;
-import utn.disenio.prendas.Accesorio;
-import utn.disenio.prendas.Piernas;
-import utn.disenio.prendas.Pies;
-import utn.disenio.prendas.Torso;
+import utn.disenio.prendas.Ropa;
 
 public class Persona {
 	
 	private String  nombre;
 	private Integer edad;
-	
-	private Pies pies;
-	private Piernas piernas;
-	private LinkedList<Accesorio> accesorios;
-	private Torso torso;
+	private LinkedList<Ropa> tengoPuesto;
 	
 	public Persona(String nombre, Integer edad) {
 		super();
@@ -24,13 +17,23 @@ public class Persona {
 		this.edad = edad;
 	}
 	
-	public void vestirme(Sensacion sen) {
+	public void vestirme(Sensacion sen, LinkedList<Ropa> ropero) {
 		switch (sen){
-			case FRIO:     System.out.println("vistiendome con mucho abrigo");
-			case FRESCO:   System.out.println("vistiendome con poco abrigo");
-			case CALIDO:   System.out.println("vistiendome para salir tranqui");
-			case CALUROSO: System.out.println("vistiendome muy ligero");
-			default: System.out.println("I don't know what to dress/wear, ¿Should I go out neaked </3?");
+			case FRIO:     
+				System.out.println("vistiendome con mucho abrigo");
+				
+			case FRESCO:   
+				System.out.println("vistiendome con poco abrigo");
+				
+			case CALIDO:   
+				System.out.println("vistiendome para salir tranqui");
+				
+			case CALUROSO: 
+				System.out.println("vistiendome muy ligero");
+				
+			default: 
+				System.out.println("I don't know what to dress/wear, ¿Should I go out neaked </3?");
+				
 		}
 	}
 	

@@ -6,6 +6,7 @@ public enum SeccionCorporal {
 	TORSO,
 	MANOS,
 	INTERIOR_BAJA,
-	INTERIOR_ALTA;
+	INTERIOR_ALTA,
+	ACCESORIO;
 
 }

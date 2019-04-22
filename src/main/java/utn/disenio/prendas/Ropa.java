@@ -4,7 +4,7 @@ import utn.disenio.clima.Sensacion;
 
 public abstract class Ropa {
 
-	private Sensacion paraClima[];
+	protected Sensacion paraClima[];
 	private SeccionCorporal cubre[];
 	
 	public String informarDetalles() {

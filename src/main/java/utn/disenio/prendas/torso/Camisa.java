@@ -5,8 +5,11 @@ import utn.disenio.prendas.Ropa;
 
 public class Camisa extends Ropa { // CAMISA
 
-	private Sensacion[] paraClima = Sensacion.values();
-	private enum manga {LARGA, CORTA}
+	private enum manga {LARGA, CORTA};
 
+	public Camisa() {
+		Sensacion[] paraClima = Sensacion.FRESCO.values();
+		this.setParaClima(paraClima);
+	}
 	
 }

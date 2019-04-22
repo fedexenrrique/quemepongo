@@ -1,7 +1,12 @@
 package utn.disenio.prendas.torso;
 
-public class Camisa {
+import utn.disenio.clima.Sensacion;
+import utn.disenio.prendas.Ropa;
 
-	private enum manga {LARGA, CORTA};
+public class Camisa extends Ropa { // CAMISA
+
+	private Sensacion[] paraClima = Sensacion.values();
+	private enum manga {LARGA, CORTA}
+
 	
 }

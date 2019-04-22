@@ -1,5 +1,5 @@
 package utn.disenio.prendas;
 
-public abstract class Torso {
+public abstract class Torso extends Ropa {
 
 }

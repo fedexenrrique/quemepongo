@@ -1,9 +1,11 @@
 package utn.disenio;
 
+import java.util.LinkedList;
 import java.util.Scanner;
 
 import utn.disenio.clima.Localization;
 import utn.disenio.clima.Sensacion;
+import utn.disenio.prendas.Ropa;
 
 public class App 
 {
@@ -14,6 +16,8 @@ public class App
     	Sensacion temperatura;
     	Persona      pearson = new Persona("Ezequiel Sosa", 33);
     	Scanner s = new Scanner(System.in);
+    	
+    	LinkedList<Ropa> prendas;
     	
 //    	
 //    	System.out.println( "Indique cuál es el clima de hoy en Buenos Aires." );
@@ -27,5 +31,12 @@ public class App
         System.out.println("El clima hoy es " + Sensacion.values()[option] + ". Prox. versión incluirá WS de clima."); 
         
         
+    }
+    
+    public static LinkedList<Ropa> obtenerRopero() {
+    	
+    	LinkedList<Ropa> ropas = new LinkedList();
+    	
+    	return ropas;
     }
 }

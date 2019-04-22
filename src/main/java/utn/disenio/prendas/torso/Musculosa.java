@@ -1,6 +1,9 @@
 package utn.disenio.prendas.torso;
 
-public class Musculosa {
+import utn.disenio.prendas.Ropa;
+
+public class Musculosa extends Ropa {
 
 	private Boolean escote;
+	
 }

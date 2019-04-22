@@ -17,9 +17,7 @@ public class App
         // INICIALIZACIONES
     	Localization loc     = new Localization();
     	Sensacion temperatura;
-    	Persona      pearson = new Persona("Ezequiel Sosa", 33);
 //    	Scanner s = new Scanner(System.in);
-    	
     	LinkedList<Ropa> prendasEnRopero = App.obtenerRopero();
     	
 //    	
@@ -33,6 +31,9 @@ public class App
         int option = (int) Math.floor(Math.random()*4);
         System.out.println("El clima hoy es " + Sensacion.values()[option] + ". Prox. versión incluirá WS de clima."); 
         
+        Persona      pearson = new Persona("Ezequiel Sosa", 33);
+        pearson.setRopaPuesta(prendasEnRopero);
+        System.out.println(pearson);
         
     }
     

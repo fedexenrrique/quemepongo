@@ -12,12 +12,13 @@ public class Persona {
 	private String  nombre;
 	private Integer edad;
 	private LinkedList<Ropa> ropaPuesta;
-	private SeccionCorporal tengoCubierto[];
+	private ArrayList<SeccionCorporal> tengoCubierto;
 	
 	public Persona(String nombre, Integer edad) {
 		super();
 		this.nombre = nombre;
 		this.edad = edad;
+		tengoCubierto = new ArrayList<>();
 	}
 	
 	public void vestirme(Sensacion sen, LinkedList<Ropa> ropero) {
@@ -65,7 +66,7 @@ public class Persona {
 	}
 	
 	public Boolean estoyVestido() {
-		return ( tengoCubierto == null || tengoCubierto.length == 0 ) ? false : true;
+		return ( tengoCubierto.isEmpty() ) ? false : true;
 	}
 
 	public String getNombre() {
@@ -101,7 +102,7 @@ public class Persona {
 			}
 		}
 		
-		tengoCubierto = seccorp.toArray();
+		tengoCubierto = seccorp;
 	}
 
 	@Override
